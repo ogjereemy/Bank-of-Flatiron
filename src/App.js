@@ -17,20 +17,20 @@ function App(){
 
   const [filteredTransactions, setFilteredTransactions] = useState(transactions);
 
-  // useEffect(() => {
-  //   setFilteredTransactions(transactions);
-  // }, [transactions]);
+  useEffect(() => {
+    setFilteredTransactions(transactions);
+  }, [transactions]);
   
-  // function handleAddTransaction(formData){
-  //   setTransactions([...transactions, formData]);
-  // };
+  function handleAddTransaction(formData){
+    setTransactions([...transactions, formData]);
+  };
   
-  // function handleSearch(searchTerm){
-  //    const filteredTransactions = transactions.filter(transaction =>
-  //     transaction.description.toLowerCase().includes(searchTerm.toLowerCase())
-  //   );
-  //     setFilteredTransactions(filteredTransactions);
-  // };
+  function handleSearch(searchTerm){
+     const filteredTransactions = transactions.filter(transaction =>
+      transaction.description.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+      setFilteredTransactions(filteredTransactions);
+  };
 
   // return (
   //   <div>
