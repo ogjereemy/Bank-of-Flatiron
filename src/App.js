@@ -32,15 +32,15 @@ function App(){
       setFilteredTransactions(filteredTransactions);
   };
 
-  // return (
-  //   <div>
-  //     <h1>BANK TRANSACTION</h1>
-  //     <TransactionForm onAddTransaction={handleAddTransaction} />
-  //     <TransactionSearch onSearch={handleSearch} />
-  //     <TransactionTable transactions={filteredTransactions} />
+  return (
+    <div>
+      <h1>BANK TRANSACTION</h1>
+      <TransactionForm onAddTransaction={handleAddTransaction} />
+      <TransactionSearch onSearch={handleSearch} />
+      <TransactionTable transactions={filteredTransactions} />
       
-  //   </div>
-  // );
+    </div>
+  );
 }
 
 export default App;
