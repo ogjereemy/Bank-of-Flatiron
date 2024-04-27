@@ -1,16 +1,16 @@
-// import React, { useState } from 'react';
+import React, { useState } from 'react';
 
-// function TransactionSearch({ onSearch }){
-//   const [searchTerm, setSearchTerm] = useState('');
+function TransactionSearch({ onSearch }){
+  const [searchTerm, setSearchTerm] = useState('');
 
-//   function handleChange(e){
-//     setSearchTerm(e.target.value);
-//     onSearch(e.target.value);
-//   };
+  function handleChange(e){
+    setSearchTerm(e.target.value);
+    onSearch(e.target.value);
+  };
 
-//   return (
-//     <input id='search' type="text" value={searchTerm} onChange={handleChange} placeholder="Search transactions..." />
-//   );
-// }
+  return (
+    <input id='search' type="text" value={searchTerm} onChange={handleChange} placeholder="Search transactions..." />
+  );
+}
 
-// export default TransactionSearch;
+export default TransactionSearch;
