@@ -15,7 +15,7 @@ function App(){
     { date: '2024-11-11', description: "Went partying", category: "Entertainment", amount: 4000 },
   ]);
 
-  // const [filteredTransactions, setFilteredTransactions] = useState(transactions);
+  const [filteredTransactions, setFilteredTransactions] = useState(transactions);
 
   // useEffect(() => {
   //   setFilteredTransactions(transactions);
