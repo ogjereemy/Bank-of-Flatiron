@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 
 function TransactionSearch({ onSearch }){
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchWord, setSearchWord] = useState('');
 
   function handleChange(e){
-    setSearchTerm(e.target.value);
+    setSearchWord(e.target.value);
     onSearch(e.target.value);
   };
 
   return (
-    <input id='search' type="text" value={searchTerm} onChange={handleChange} placeholder="Search transactions..." />
+    <input id='search' type="text" value={searchWord} onChange={handleChange} placeholder="Search transactions..." />
   );
 }
 
